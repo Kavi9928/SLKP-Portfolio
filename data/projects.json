@@ -21,6 +21,20 @@
 		"demo": "https://srilancanevents.ca/"
 	},
 	{
+		"title": "Rupane — Video Magazine",
+		"description": "Online video magazine for Sri Lankan community in Canada showcasing arts, culture, and achievements.",
+		"tags": ["WordPress", "Video", "CMS"],
+		"image": "assets/img/rupane.png",
+		"demo": "https://rupane.com/"
+	},
+	{
+		"title": "Srilancan Radio — Online Radio",
+		"description": "Online radio station for Sri Lankan community in Canada with live streaming, podcasts, and program lineup.",
+		"tags": ["WordPress", "Audio", "Streaming"],
+		"image": "assets/img/radio.png",
+		"demo": "https://srilancanradio.com/"
+	},
+	{
 		"title": "Bordim — PHP",
 		"description": "Local project running on XAMPP.",
 		"tags": ["PHP", "MySQL"],
