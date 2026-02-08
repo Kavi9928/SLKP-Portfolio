@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio | Kavindi Wanigasekara</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+	<!-- Custom Cursor -->
+	<div class="cursor" id="cursor"></div>
+	<div class="cursor-follower" id="cursor-follower"></div>
+	
+	<!-- Scroll Progress -->
+	<div class="scroll-progress" id="scroll-progress"></div>
+	
+	<!-- Floating Particles Canvas -->
+	<canvas id="particles-canvas"></canvas>
+	
+	<!-- Animated Blobs -->
+	<div class="blob-container" aria-hidden="true">
+		<div class="blob blob-1"></div>
+		<div class="blob blob-2"></div>
+		<div class="blob blob-3"></div>
+	</div>
+
+	<!-- Page Loader -->
+	<div id="loader" class="loader" aria-hidden="true">
+		<div class="loader-content">
+			<div class="loader-logo">KW</div>
+			<div class="loader-bar"><div class="loader-progress"></div></div>
+		</div>
+	</div>
+	<header class="site-header reveal">
+		<nav class="nav container">
+			<a class="logo" href="#home"><span class="logo-text">Kavindi</span><span class="logo-dot">.</span></a>
+			<button class="nav-toggle" aria-label="Toggle menu">☰</button>
+			<ul class="nav-list">
+				<li><a href="#about" data-magnetic>About</a></li>
+				<li><a href="#skills" data-magnetic>Skills</a></li>
+				<li><a href="#projects" data-magnetic>Projects</a></li>
+				<li><a href="#experience" data-magnetic>Experience</a></li>
+				<li><a href="#contact" data-magnetic>Contact</a></li>
+			</ul>
+			<button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+				<svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+					<circle cx="12" cy="12" r="5"/>
+					<path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+				</svg>
+				<svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+				</svg>
+			</button>
+		</nav>
+	</header>
+
+	<main id="home">
+		<section class="hero container reveal">
+			<div class="hero-layout">
+				<div class="hero-copy">
+					<span class="hero-badge">Available for work</span>
+					<h1>Hi, I'm <span class="gradient-text">Kavindi Wanigasekara</span></h1>
+					<p class="typing-container">I'm a <span id="typing-text" class="typing-text"></span><span class="typing-cursor">|</span></p>
+					<div class="hero-ctas">
+						<a class="btn primary magnetic" href="#projects" data-magnetic>
+							<span>View Projects</span>
+							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+						</a>
+						<a class="btn glass magnetic" href="assets/Kavindi_Wanigasekara_CV.pdf" target="_blank" rel="noopener" data-magnetic>
+							<span>Download CV</span>
+							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+						</a>
+					</div>
+					<div class="hero-stats">
+						<div class="stat">
+							<span class="stat-number" data-count="12">0</span>+
+							<span class="stat-label">Projects</span>
+						</div>
+						<div class="stat">
+							<span class="stat-number" data-count="3">0</span>+
+							<span class="stat-label">Years Exp</span>
+						</div>
+						<div class="stat">
+							<span class="stat-number" data-count="100">0</span>%
+							<span class="stat-label">Dedication</span>
+						</div>
+					</div>
+				</div>
+				<aside class="hero-photo">
+					<div class="avatar-glow"></div>
+					<div class="avatar" data-tilt data-tilt-max="15" data-tilt-speed="400">
+						<img src="assets/img/profile.jpeg" alt="Portrait photo" loading="lazy" />
+					</div>
+					<div class="floating-icons">
+						<span class="float-icon" style="--delay: 0s; --x: -60px; --y: 40px;">💻</span>
+						<span class="float-icon" style="--delay: 0.5s; --x: 80px; --y: -30px;">🎨</span>
+						<span class="float-icon" style="--delay: 1s; --x: 60px; --y: 80px;">✨</span>
+					</div>
+				</aside>
+			</div>
+			<div class="scroll-indicator">
+				<span>Scroll Down</span>
+				<div class="mouse"><div class="wheel"></div></div>
+			</div>
+		</section>
+
+		<section id="about" class="container section reveal">
+			<h2>About</h2>
+			<p>
+				Results-driven Web Developer with expertise in HTML, CSS, JavaScript, PHP, Next.js, Laravel, TypeScript and WordPress, specializing in scalable web applications and UI/UX optimization. Skilled in custom WordPress development, theme customization, and plugin integration. Adept at building responsive, high-performance websites that enhance user engagement and functionality. Strong understanding of front-end and backend development and database management. Passionate about leveraging modern technologies to improve website speed, security, and overall user experience.
+			</p>
+			<div class="about-skills">
+				<span class="skill-chip">HTML</span>
+				<span class="skill-chip">CSS</span>
+				<span class="skill-chip">JavaScript</span>
+				<span class="skill-chip">PHP</span>
+				<span class="skill-chip">Next.js</span>
+				<span class="skill-chip">Laravel</span>
+				<span class="skill-chip">TypeScript</span>
+				<span class="skill-chip">SQL</span>
+				<span class="skill-chip">WordPress</span>
+				<span class="skill-chip">WooCommerce</span>
+				<span class="skill-chip">Elementor</span>
+				<span class="skill-chip">Figma</span>
+				<span class="skill-chip">UI/UX Design</span>
+				<span class="skill-chip">Theme Customization</span>
+				<span class="skill-chip">Plugin Integration</span>
+				<span class="skill-chip">Database Management</span>
+				<span class="skill-chip">Responsive Design</span>
+				<span class="skill-chip">Web Performance</span>
+			</div>
+		</section>
+
+		<section id="skills" class="container section reveal">
+			<h2>Skills</h2>
+			<div class="skills-grid">
+				<div class="skill-category">
+					<h3>Frontend</h3>
+					<div class="skill-bars">
+						<div class="skill-bar" data-skill="HTML" data-level="95"></div>
+						<div class="skill-bar" data-skill="CSS" data-level="90"></div>
+						<div class="skill-bar" data-skill="JavaScript" data-level="85"></div>
+						<div class="skill-bar" data-skill="Next.js" data-level="75"></div>
+					</div>
+				</div>
+				<div class="skill-category">
+					<h3>Backend & CMS</h3>
+					<div class="skill-bars">
+						<div class="skill-bar" data-skill="PHP" data-level="80"></div>
+						<div class="skill-bar" data-skill="Laravel" data-level="75"></div>
+						<div class="skill-bar" data-skill="SQL" data-level="75"></div>
+						<div class="skill-bar" data-skill="WordPress" data-level="90"></div>
+						<div class="skill-bar" data-skill="WooCommerce" data-level="85"></div>
+					</div>
+				</div>
+				<div class="skill-category">
+					<h3>Design Tools</h3>
+					<div class="skill-bars">
+						<div class="skill-bar" data-skill="Figma" data-level="90"></div>
+						<div class="skill-bar" data-skill="Elementor" data-level="88"></div>
+					</div>
+				</div>
+			</div>
+			<div class="tech-orbit">
+				<div class="orbit-ring"></div>
+				<div class="orbit-icon" style="--angle: 0deg;"><span>⚛️</span></div>
+				<div class="orbit-icon" style="--angle: 60deg;"><span>🎨</span></div>
+				<div class="orbit-icon" style="--angle: 120deg;"><span>🔧</span></div>
+				<div class="orbit-icon" style="--angle: 180deg;"><span>💾</span></div>
+				<div class="orbit-icon" style="--angle: 240deg;"><span>🌐</span></div>
+				<div class="orbit-icon" style="--angle: 300deg;"><span>📱</span></div>
+			</div>
+		</section>
+
+		<section id="projects" class="container section reveal">
+			<h2>Projects</h2>
+			<div id="projects-grid" class="grid"></div>
+		</section>
+
+		<section id="experience" class="container section reveal">
+			<h2>Experience</h2>
+			<div class="timeline-modern">
+				<div class="timeline-line"></div>
+				<div class="timeline-item-modern" data-aos="fade-up">
+					<div class="timeline-dot"></div>
+					<div class="timeline-card glass">
+						<div class="timeline-header">
+                            <span class="company-logo"><img src="assets/img/weera.jpeg" alt="Company Name" /></span>							<div>
+								<h3>WeeraTech</h3>
+								<span class="role">Web Administrator & Social Media Manager</span>
+							</div>
+						</div>
+						<p class="meta"><span class="badge">Remote</span> Jan 2023 – Present • Toronto, Canada</p>
+						<p>Managing website content and performance while planning and executing social media strategies to grow reach and engagement.</p>
+						<div class="timeline-tags">
+							<span>WordPress</span><span>Social Media</span><span>Content Strategy</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline-modern">
+				<div class="timeline-line"></div>
+				<div class="timeline-item-modern" data-aos="fade-up">
+					<div class="timeline-dot"></div>
+					<div class="timeline-card glass">
+						<div class="timeline-header">
+							<span class="company-logo"><img src="assets/img/innovate.jpeg" alt="InnovateX Solutions" /></span>
+							<div>
+								<h3>InnovateX Solutions</h3>
+								<span class="role">SE Intern</span>
+							</div>
+						</div>
+						<p class="meta"><span class="badge">Remote</span>  2025 March – 2025 August • Kandy, Sri Lanka</p>
+						<p>Assisted in developing, hosting, and maintaining web applications, collaborated with the team on various projects, and gained hands-on experience in software engineering practices.</p>
+						<div class="timeline-tags">
+							<span>WordPress</span><span>HTML</span><span>CSS</span><span>Js</span><span>MySql</span><span>WooCommerce</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline-modern">
+				<div class="timeline-line"></div>
+				<div class="timeline-item-modern" data-aos="fade-up">
+					<div class="timeline-dot"></div>
+					<div class="timeline-card glass">
+						<div class="timeline-header">
+							<span class="company-logo"><img src="assets/img/zuse.jpeg" alt="Zuse Technologies" /></span>
+							<div>
+								<h3>Zuse Technologies</h3>
+								<span class="role">SE Intern</span>
+							</div>
+						</div>
+						<p class="meta"><span class="badge">On-site</span> Sep 2025 – Present • Nugegoda, Sri Lanka</p>
+						<p>Laravel, WordPress site development and maintenance.</p>
+						<div class="timeline-tags">
+							<span>WordPress</span><span>Laravel</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="contact" class="container section reveal">
+			<h2>Let's Connect</h2>
+			<p class="contact-intro">Have a project in mind? Let's create something amazing together!</p>
+			
+			<div class="contact-grid">
+				<form id="contact-form" class="contact-form glass">
+					<div class="form-group">
+						<input type="text" id="name" name="name" required placeholder=" " />
+						<label for="name">Your Name</label>
+						<span class="input-highlight"></span>
+					</div>
+					<div class="form-group">
+						<input type="email" id="email" name="email" required placeholder=" " />
+						<label for="email">Your Email</label>
+						<span class="input-highlight"></span>
+					</div>
+					<div class="form-group">
+						<textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+						<label for="message">Your Message</label>
+						<span class="input-highlight"></span>
+					</div>
+					<button type="submit" class="btn primary magnetic" data-magnetic>
+						<span>Send Message</span>
+						<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+					</button>
+					<p id="form-status" class="form-status"></p>
+				</form>
+				
+				<div class="contact-info">
+					<div class="info-card glass">
+						<div class="info-icon">📧</div>
+						<h4>Email</h4>
+						<a href="mailto:kavindiwanigasekara4@gmail.com">kavindiwanigasekara4@gmail.com</a>
+					</div>
+					<div class="info-card glass">
+						<div class="info-icon">📍</div>
+						<h4>Location</h4>
+						<p>Moratuwa, Sri Lanka</p>
+					</div>
+					<div class="social-links">
+						<a class="social-btn" href="https://github.com/kavi9928" target="_blank" rel="noopener" aria-label="GitHub" data-magnetic>
+							<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.11.79-.25.79-.56v-2.01c-3.23.7-3.91-1.4-3.91-1.4-.53-1.35-1.29-1.71-1.29-1.71-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.75-1.56-2.58-.29-5.3-1.29-5.3-5.73 0-1.27.46-2.31 1.2-3.12-.12-.29-.52-1.47.11-3.07 0 0 .98-.31 3.21 1.19a11.15 11.15 0 0 1 5.84 0c2.23-1.5 3.2-1.19 3.2-1.19.64 1.6.24 2.78.12 3.07.75.81 1.2 1.85 1.2 3.12 0 4.46-2.72 5.44-5.32 5.73.42.36.8 1.08.8 2.18v3.24c0 .32.2.68.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+						</a>
+						<a class="social-btn" href="https://www.linkedin.com/in/kavindi-wanigasekara-056004214" target="_blank" rel="noopener" aria-label="LinkedIn" data-magnetic>
+							<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-1 1.82-2.06 3.75-2.06 4.01 0 4.75 2.64 4.75 6.07V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.91 1.3-1.91 2.64V21H9z"/></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-content">
+			<p>© <span id="year"></span> Kavindi Wanigasekara. Crafted with ❤️</p>
+		</div>
+	</footer>
+
+	<!-- Toast Notification -->
+	<div id="toast" class="toast"></div>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
+
