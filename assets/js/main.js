@@ -127,11 +127,11 @@ function initTypingAnimation() {
 	if (!typingEl) return;
 
 	const phrases = [
-		'UI/UX Designer',
-		'Web Developer',
-		'WordPress Expert',
-		'Creative Thinker',
-		'Problem Solver'
+		'Event Shooting',
+		'Video Editing',
+		'Wedding Films',
+		'Corporate Events',
+		'Drone Coverage'
 	];
 
 	let phraseIndex = 0;
